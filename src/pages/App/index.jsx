@@ -5,7 +5,8 @@ import MyAccount from "../MyAccount";
 import MyOrder from "../MyOrder";
 import MyOrders from "../MyOrders";
 import NotFound from "../NotFound";
-import SingIn from "../SignIn";
+import SignIn from "../SignIn";
+import NavBar from "../../components/NavBar";
 
 import "./App.css";
 
@@ -16,7 +17,7 @@ const AppRoutes = () => {
     { path: "/my-order", element: <MyOrder /> },
     { path: "/my-orders", element: <MyOrders /> },
     { path: "/*", element: <NotFound /> },
-    { path: "/sing-in", element: <SingIn /> },
+    { path: "/sign-in", element: <SignIn /> },
   ]);
   return routes;
 };
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <AppRoutes />
+      <NavBar />
     </BrowserRouter>
   );
 };
