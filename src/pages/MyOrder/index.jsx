@@ -1,5 +1,7 @@
+import Layout from "../../components/Layout";
+
 const MyOrder = () => {
-  return <div className="bg-red-200">Hello from My Order</div>;
+  return <Layout className="bg-red-200">Hello from My Order</Layout>;
 };
 
 export default MyOrder;

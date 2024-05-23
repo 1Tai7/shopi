@@ -1,5 +1,7 @@
+import Layout from "../../components/Layout";
+
 const SignIn = () => {
-  return <div className="bg-red-200">Hello from Sign In </div>;
+  return <Layout className="bg-red-200">Hello from Sign In </Layout>;
 };
 
 export default SignIn;
